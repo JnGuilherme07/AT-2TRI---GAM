@@ -6,3 +6,4 @@ res://scenes/level.tscn
 res://scenes/character_body_2d.gd
 res://scenes/inimigo.tscn
 res://scenes/player.gd
+res://scenes/cereja.tscn
