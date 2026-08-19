@@ -1,3 +1,8 @@
 res://scenes/player.tscn
-res://scenes/level.tscn
 res://resources/ground_tileset.tres
+res://scripts/player.gd
+res://scripts/cereja.gd
+res://scenes/level.tscn
+res://scenes/character_body_2d.gd
+res://scenes/inimigo.tscn
+res://scenes/player.gd

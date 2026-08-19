@@ -1,8 +1,21 @@
 extends Area2D
-## Coletável da fase
+
+var coins := 1
+var collected := false
+
+@onready var animated_sprite_2d = $AnimatedSprite2D
+
+func _ready():
+	coins = 0
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
-		GameManager.add_point()
-		body.brilhar()
-		queue_free()
+	if collected:
+		return
+
+	collected = true
+	coins += coins
+	print(coins)
+
+	animated_sprite_2d.play("colect")
+
+	set_deferred("monitoring", false)
